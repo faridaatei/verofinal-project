@@ -1,0 +1,213 @@
+
+*{
+  margin: 0;
+  padding:0;
+  user-select: none;
+}
+
+
+body{
+  /*overflow-x: hidden;*/
+  /*font-family: arial;*/
+}
+
+.container{
+  width: 100%;
+  height: 80%;
+  background-color: #af62d6;
+}
+
+img.round{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px;
+}
+
+
+.prof{
+  text-align: center;
+  margin: -80px;
+}
+
+
+h1{
+  color:#ffdb28;
+}
+
+h2{
+  margin-top: 20px;
+  color: #ecd8f0;
+}
+
+
+.cons img{
+max-width: 100%;
+height:200%;
+position: relative;
+top: -63%;
+margin-left: 50px;
+
+}
+
+.cons{
+  background-color: #ffdb28;
+  width: 100%;
+  height: 90%;
+  margin-top: 10%;
+ 
+
+}
+
+.tagline p{
+  margin-bottom: 50px;
+  font-size: 20px;
+ position: absolute;
+ left: 0px;
+ bottom: -130px;
+ margin-left: 20px;
+ text-transform: uppercase;
+ font-weight: bolder;
+
+
+}
+
+/*end of homepage*/
+
+.about{
+  background-color: #ecd8f0;
+  width: 100%;
+  height: 900px;
+  position: relative;
+  top:  334px;
+  font-weight: lighter;
+}
+
+
+.maua img{
+  width:625px;
+  height: 550px;
+  position: relative;
+  bottom: 200px;
+  left: 630px;
+}
+
+.conte{
+  position: relative;
+  top: 570px;
+
+
+}
+
+.conte h2{
+  margin-left: 40px;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #2c3235;
+  letter-spacing: -0.05em;
+  font-weight: 100;
+  text-transform: uppercase;
+
+
+}
+
+.conte p{
+  margin-left: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+  text-align: justify; 
+ 
+}
+
+.currentwrk{
+  /*background-color: red;*/
+  width: 100%;
+  height: 1500px;
+  position: relative;
+  top:  333px;
+  font-weight: lighter;
+}
+
+.currentwrk h1{
+position: relative;
+top: 100px;
+text-align: center;
+font-size: 80px;
+
+}
+
+.box{
+width: 1350px;
+height: 1500px;
+/*background-color: orange*/
+
+}
+
+
+
+.currentwork1{
+width: 400px;
+height: 810px;
+
+float: left;
+position: relative;
+left: 20px;
+top: 170px;
+background-image: url("images/vero2.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.currentwork2{
+width: 920px;
+height: 400px;
+left: 430px;
+position: relative;
+top: 170px;
+background-image: url("images/v17.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover ;
+
+
+}
+.currentwork3{
+width: 920px;
+height: 400px;
+left: 430px;
+position: relative;
+top: 180px;
+background-image: url("images/v17.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.currentwork4{
+width: 1350px;
+height: 450px;
+position: relative;
+top: 190px;
+left: 20px;
+background-image: url("images/big4.jpg");
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+
+
+
+
