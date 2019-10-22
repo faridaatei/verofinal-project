@@ -9,6 +9,12 @@
 body{
   /*overflow-x: hidden;*/
   /*font-family: arial;*/
+  font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  
+    
+    -webkit-font-smoothing: antialiased;
 }
 
 .container{
@@ -41,7 +47,9 @@ h1{
 h2{
   margin-top: 20px;
   color: #ecd8f0;
+  letter-spacing: 0.2em;
 }
+
 
 
 .cons img{
@@ -84,6 +92,7 @@ margin-left: 50px;
   position: relative;
   top:  334px;
   font-weight: lighter;
+
 }
 
 
@@ -104,7 +113,7 @@ margin-left: 50px;
 
 .conte h2{
   margin-left: 40px;
-  font-size: 40px;
+   font-size: 3em;
   margin-bottom: 20px;
   color: #2c3235;
   letter-spacing: -0.05em;
@@ -122,6 +131,45 @@ margin-left: 50px;
  
 }
 
+section{
+  height: 20vh;
+  /*background-color: #000;*/
+
+}
+h5{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 140px;
+  transform: translateY(-50%);
+  width: 100%;
+  color: #000;
+  font-size: 5em;
+  text-align: center;
+ /* letter-spacing: 0.2em;*/
+}
+h5 span{
+  opacity: 0;
+  display: inline-block;
+  animation: animate 1s linear forwards;
+}
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+  100%{
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0);
+
+
+  }
+ 
+}
+/*The main container of current work*/
+
 .currentwrk{
   /*background-color: red;*/
   width: 100%;
@@ -131,13 +179,7 @@ margin-left: 50px;
   font-weight: lighter;
 }
 
-.currentwrk h1{
-position: relative;
-top: 100px;
-text-align: center;
-font-size: 80px;
-
-}
+/*big container holding other divs*/
 
 .box{
 width: 1350px;
@@ -147,63 +189,394 @@ height: 1500px;
 }
 
 
-
 .currentwork1{
-width: 400px;
-height: 810px;
-
+/*width: 400px;
+height: 785px;
 float: left;
 position: relative;
-left: 20px;
+left: 12px;
 top: 170px;
-background-image: url("images/vero2.jpg");
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.currentwork2{
-width: 920px;
-height: 400px;
-left: 430px;
-position: relative;
-top: 170px;
-background-image: url("images/v17.jpg");
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover ;
-
-
-}
-.currentwork3{
-width: 920px;
-height: 400px;
-left: 430px;
-position: relative;
-top: 180px;
-background-image: url("images/v17.jpg");
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-.currentwork4{
-width: 1350px;
-height: 450px;
-position: relative;
-top: 190px;
-left: 20px;
-background-image: url("images/big4.jpg");
+background-image: url("images/zebra8.jpg");
 background-color: #cccccc;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+min-height: 370px;*/
+
+
 }
+
+/*Image hover on the first image in current work section*/
+.child {
+width: 400px;
+height: 785px;
+float: left;
+position: relative;
+left: 12px;
+top: 170px;
+background-image: url("images/zebra8.jpg");
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 370px;
+  
+}
+.currentwork1:hover .child,
+.currentwork1:focus .child {
+  transform: scale(0.9);
+  transition: all .5s;
+}
+.child::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+.currentwork1:hover .child:before,
+.currentwork1:focus .child:before {
+  display: block;
+}
+
+.currentwork2{
+/*width: 900px;
+min-height: 380px;
+left: 430px;
+position: relative;
+top: 170px;
+background-image: url("images/zebra5.jpg");
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover ;
+margin-bottom: 1rem;  */ 
+  
+}
+/*Image hover on the second image in current work section*/
+.child1 {
+width: 900px;
+min-height: 380px;
+left: 430px;
+position: relative;
+top: 170px;
+background-image: url("images/zebra5.jpg");
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover ;
+margin-bottom: 1rem;  
+  
+}
+.currentwork2:hover .child1,
+.currentwork2:focus .child1 {
+  transform: scale(0.9);
+  transition: all .5s;
+}
+.child1::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+.currentwork2:hover .child1:before,
+.currentwork2:focus .child1:before {
+  display: block;
+}
+.currentwork3{
+width: 900px;
+min-height: 380px;
+/*left: 430px;
+position: relative;
+top: 180px;
+background-image: url("images/zebra5.jpg");
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin-bottom: 1rem; */
+
+}
+/*Image hover on the third image in current work section*/
+.child3{
+  width: 900px;
+min-height: 380px;
+left: 430px;
+position: relative;
+top: 180px;
+background-image: url("images/zebra5.jpg");
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin-bottom: 1rem; 
+
+
+
+}
+.currentwork3:hover .child3,
+.currentwork3:focus .child3 {
+  transform: scale(0.9);
+  transition: all .5s;
+}
+.child3::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+.currentwork3:hover .child3:before,
+.currentwork3:focus .child3:before {
+  display: block;
+}
+
+.currentwork3:hover .child3,
+.currentwork3:focus .child3, {
+  transform: scale(0.9);
+  transition: all .5s;
+}
+.child1::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+.currentwork2:hover .child1:before,
+.currentwork2:focus .child1:before {
+  display: block;
+}
+
+
+
+
+.currentwork4{
+width: 1317px;
+min-height: 450px;
+/*position: relative;
+top: 190px;
+left: 12px;
+background-image: url("images/zebra3.jpg");
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: 1rem;*/
+
+ /*Image hover on the forth image in current work section*/  
+}
+.child4{
+width: 1317px;
+min-height: 450px;
+position: relative;
+top: 190px;
+left: 12px;
+background-image: url("images/zebra3.jpg");
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: 1rem;
+}
+
+.currentwork4:hover .child4,
+.currentwork4:focus .child4 {
+  transform: scale(0.9);
+  transition: all .5s;
+}
+.child4::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+.currentwork4:hover .child4:before,
+.currentwork4:focus .child4:before {
+  display: block;
+}
+
+.currentwork4:hover .child4,
+.currentwork4:focus .child4, {
+  transform: scale(0.9);
+  transition: all .5s;
+}
+.child4::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+.currentwork4:hover .child4:before,
+.currentwork4:focus .child4:before {
+  display: block;
+}
+
+
+
+
+
+   
+
+
+
+
+/*circle that is at the bottom of the images*/
+
+.circle {
+   /*background-image: url("images/vero2.jpg");*/
+  height: 50px;
+  width: 50px;
+  background-color:#af62d6;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 14px;
+   border: 4px solid #ffdb28;
+
+  
+
+}
+
+i:hover{
+  transform: rotate(360deg);
+  transition: 1s all;
+}
+i{
+  transition: 1s all;
+}
+
+/*background patrticles*/
+/*#canvas*/
+
+#canvas1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(orange);
+
+}
+
+.contact{
+background-color: #ffdb28;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top:  386px;
+  
+}
+
+
+
+.footer{
+background-color: #af62d6;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  top:  386px;
+  
+
+}
+.facebook{
+  position: relative;
+  left: 950px;
+  top: 44px;
+}
+
+.twitter{
+  position: relative;
+  left: 1030px;
+  top: -6px;
+  
+}
+
+.instagram{
+  position: relative;
+  left: 1130px;
+  top: -50px;
+}
+.linkedin{
+  position: relative;
+  left: 1220px;
+  top: -100px;
+}
+
+.copyright h1{
+  position: relative;
+  top: -16px;
+  text-align: center;
+  color: #ecd8f0;
+  font-size: 14px;
+
+}
+
+.timo p{
+  font-size: 60px;
+  text-align: center;
+  position: relative;
+  top: 80px;
+  color: #af62d6;
+
+ 
+}
+.caro p{
+  margin-top: 110px;
+   margin-left: 300px;
+    margin-right: 300px;
+   
+}
+
+hr{
+  width: 10%;
+  margin-left: 590px;
+  margin-top:90px;
+border: 2px  solid #af62d6;
+
+
+}
+
+.details h1{
+  color: #af62d6;
+  text-align: center;
+  margin-top: 90px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
