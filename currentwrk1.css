@@ -4,6 +4,7 @@
   user-select: none;
 }
 body{
+	 overflow-x: hidden;
 	
 
 }
@@ -11,16 +12,15 @@ body{
 .containerwhole{
 	background-color: blue;
 	width: 100%;
-	height: 1300px;
+	height: 1200px;
 	margin-top: -16px;
 }
 
 .iconclose{
 	background-color: brown;
-	width: 10%;
+	width: 5%;
 	height: 100px;
-	/*position: relative;*/
-	left: 1590px;
+	left: 1650px;
 	top: 90px;
 	position: fixed;
 }
@@ -28,10 +28,11 @@ body{
 
 .heading h1{
 	
-	margin-top: -880px;
+	margin-top: -980px;
 	font-size: 80px;
-	position: relative;
-	right: -1100px;
+	margin-left:910px;
+	text-align: center;
+	
 
 	
 
@@ -39,14 +40,14 @@ body{
 
 
 .circle {
-   /*background-image: url("images/vero2.jpg");*/
+   
   height: 50px;
   width: 50px;
   background-color:#af62d6;
   border-radius: 50%;
   position: absolute;
   bottom: 20px;
-  right: 60px;
+  right: 15px;
   border: 4px solid #ffdb28;
 
 
@@ -56,11 +57,7 @@ body{
 
 
 .picha img{
-	/*width: 70%;
-	height: auto;
-	object-fit: cover;
-	margin-top: -8px;
-	margin-left: -8px;*/
+	
 
   width: 100%;
   max-width: 1000px;
@@ -69,13 +66,13 @@ body{
 }
 .words{
 	width: 400px;
-	height: 440px;
+	height: 490px;
 	float: right;
-	background-color: yellow;
-	position: relative;
-	top: 65px;
-	left: -190px;
 
+	background-color: yellow;
+	margin-top: 90px;
+	margin-right: 220px;
+	
 }
 
 .words p{
@@ -89,18 +86,33 @@ body{
 
 .words1{
 width: 100%;
-height: 160px;
+height: 200px;
 background-color: purple;
-position: relative;
-left: -10px;
-top:534px;
+margin-top: 600px;
 font-size: 28px;
+
 
 }
 
 
 .words1 p{
-	
-	position: relative;
-	left: 220px;
+left: 220px;
 }
+
+
+hr{
+  width: 10%;
+  margin-left: 1px;
+  margin-top:40px;
+  border: 2px  solid #af62d6;
+}
+
+.words1 h1{
+	 margin-bottom:40px;
+	 font-size: 20px;
+}
+
+
+
+
+

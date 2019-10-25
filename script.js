@@ -49,12 +49,12 @@ this.draw();
 function init(){
 	particleArray =[];
 	for (let i=0; i<100; i++) {
-		let size = Math.random() * 20;
-		let x = Math.random() *(innerWidth -size * 2);
-		let y = Math.random() *(innerHeight -size * 2);
-		let directionX =(Math.random() * .4) - .2;
-		let directiony =(Math.random() * .4) - .2;
-		let color = 'white';
+		let size = Math.random() * 4;
+		let x = Math.random() *(innerWidth -size * 1);
+		let y = Math.random() *(innerHeight -size * 1);
+		let directionX =(Math.random() * .2) - .1;
+		let directiony =(Math.random() * .2) - .1;
+		let color = 'magenta';
 
 
 particleArray.push(new particle(x,y, directionX,directiony,
